@@ -1,4 +1,5 @@
 ﻿// 35. Определить, присутствует ли в заданном массиве, некоторое число
+
 int[] EnterArray(int length)
 {
     int[] array = new int[length];
@@ -7,7 +8,6 @@ int[] EnterArray(int length)
         Console.Write($"Введите {i + 1} элемент массива: ");
         array[i] = int.Parse(Console.ReadLine() ?? "0");
     }
-
     return array;
 }
 
@@ -19,7 +19,6 @@ bool ContainNumber(int[] array, int N)
             return true;
 
     return false;
-
 }
 
 Console.WriteLine("Введите размер массива:");
@@ -31,6 +30,6 @@ int N = int.Parse(Console.ReadLine() ?? "0");
 if (ContainNumber(array, N) == true)
     Console.WriteLine($"Массив содержит {N}");
 else
- Console.WriteLine($"Массив не содержит {N}");
+    Console.WriteLine($"Массив не содержит {N}");
 
 
